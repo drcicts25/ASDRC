@@ -1,0 +1,282 @@
+{
+  "society": {
+    "name": "Astronomical Society of Dharmaraja College",
+    "shortName": "ASDRC",
+    "foundedYear": 1996,
+    "formalNameYear": 2003,
+    "tagline": "Looking beyond the horizon since 1996.",
+    "location": "Dharmaraja College, Kandy, Sri Lanka",
+    "email": "asdrck@gmail.com",
+    "micPhone": "+94 77 320 8073",
+    "address": "Dharmaraja College, Louis Peris Mawatha, Kandy, Sri Lanka",
+    "schoolPhone": "0812 234 495",
+    "schoolEmail": "info@dharmaraja.lk",
+    "schoolWebsite": "dharmaraja.lk",
+    "socials": {
+      "facebook": "www.facebook.com/ASDRCK",
+      "instagram": "www.instagram.com/rajans_astronomy",
+      "youtube": "www.youtube.com/@rajansastronomy8361",
+      "whatsapp": "wa.me/94727476050?text=Hello"
+    },
+    "logos": {
+      "asdrcLogo": "./asdrc-logo.png",
+      "collegeCrest": "./college-crest.png",
+      "un26Logo": ""
+    }
+  },
+  "un26": {
+    "edition": "UN '27",
+    "completedEpisodesCount": "9",
+    "completedEpisodesNote": "",
+    "date": "14th January 2027",
+    "venue": "Dharmaraja College Main Auditorium",
+    "registrationCloses": "15th December 2026",
+    "eligibility": "[eligibility]",
+    "teamEntryQuota": "[Team A/ Team B/ Workshop Team]",
+    "ageLimitCriteria": "[age/grade criteria]",
+    "registrationDeadline": "15th December 2026",
+    "competitionFormat": "[Rounds, time limits, marking scheme, tie-breakers.]",
+    "withdrawalDeadline": "[date]",
+    "firstRoundCentres": [
+      "Kandy",
+      "Colombo",
+      "Anuradhapura"
+    ],
+    "ruleBookPdfUrl": "/api/rulebook-pdf"
+  },
+  "champions": [
+    {
+      "id": "champ-2027",
+      "year": "2027",
+      "logoPlaceholder": "?",
+      "logoUrl": "",
+      "school": "Who Will be..?",
+      "episode": "Episode X"
+    },
+    {
+      "id": "champ-2026",
+      "year": "2026",
+      "logoPlaceholder": "Ananda College",
+      "logoUrl": "./Ananda.png",
+      "school": "Ananda College - Colombo",
+      "episode": "Episode 0B - Sagittarius (Defending Champions)"
+    },
+    {
+      "id": "champ-2025",
+      "year": "2025",
+      "logoPlaceholder": "Ananda College",
+      "logoUrl": "./Ananda.png",
+      "school": "Ananda College - Colombo",
+      "episode": "Episode IX"
+    },
+    {
+      "id": "champ-2024",
+      "year": "2024",
+      "logoPlaceholder": "Nalanda College",
+      "logoUrl": "/Nalanda.png",
+      "school": "Nalanda College - Colombo",
+      "episode": "Episode VIII"
+    },
+    {
+      "id": "champ-2023",
+      "year": "2023",
+      "logoPlaceholder": "Ananda College",
+      "logoUrl": "./Ananda.png",
+      "school": "Ananda College - Colombo",
+      "episode": "Episode VII"
+    },
+    {
+      "id": "champ-2022",
+      "year": "2022",
+      "logoPlaceholder": "Nalanda College",
+      "logoUrl": "/Nalanda.png",
+      "school": "Nalanda College - Colombo",
+      "episode": "Episode VI"
+    },
+    {
+      "id": "champ-2021",
+      "year": "2021",
+      "logoPlaceholder": "Royal College",
+      "logoUrl": "/Royal.png",
+      "school": "Royal College - Colombo",
+      "episode": "Episode V"
+    },
+    {
+      "id": "champ-2020",
+      "year": "2020",
+      "logoPlaceholder": "Nalanda College",
+      "logoUrl": "/Nalanda.png",
+      "school": "Nalanda College - Colombo",
+      "episode": "Episode IV"
+    },
+    {
+      "id": "champ-2019",
+      "year": "2019",
+      "logoPlaceholder": "Nalanda College",
+      "logoUrl": "/Nalanda.png",
+      "school": "Nalanda College - Colombo",
+      "episode": "Episode 0A - Sagittarius"
+    },
+    {
+      "id": "champ-2018",
+      "year": "2020",
+      "logoPlaceholder": "Royal College",
+      "logoUrl": "/Royal.png",
+      "school": "Nalanda College - Colombo",
+      "episode": "Episode III"
+    },
+    {
+      "id": "champ-2017",
+      "year": "2020",
+      "logoPlaceholder": "Ananda College",
+      "logoUrl": "./Ananda.png",
+      "school": "Ananda College - Colombo",
+      "episode": "Episode II"
+    }
+  ],
+  "gallery": [
+    {
+      "id": "gal-1",
+      "slotLabel": "Photo Slot 01 / 10",
+      "category": "Teams in action",
+      "caption": "Teams in action — Inter-school quiz & astrophysics challenge rounds",
+      "year": "UN Archives",
+      "imageUrl": ""
+    },
+    {
+      "id": "gal-2",
+      "slotLabel": "Photo Slot 02 / 10",
+      "category": "Under the stars",
+      "caption": "Under the stars — Night sky telescope observation session on the field",
+      "year": "UN Archives",
+      "imageUrl": ""
+    },
+    {
+      "id": "gal-3",
+      "slotLabel": "Photo Slot 03 / 10",
+      "category": "Prize giving",
+      "caption": "Prize giving — Awarding the Universal Night Championship Trophy",
+      "year": "UN Archives",
+      "imageUrl": ""
+    },
+    {
+      "id": "gal-4",
+      "slotLabel": "Photo Slot 04 / 10",
+      "category": "Behind the scenes",
+      "caption": "Behind the scenes — ASDRC organizing committee setting up the main arena",
+      "year": "UN Archives",
+      "imageUrl": ""
+    },
+    {
+      "id": "gal-5",
+      "slotLabel": "Photo Slot 05 / 10",
+      "category": "Teams in action",
+      "caption": "Teams in action — Rocketry & Cosmology analytical problem solving",
+      "year": "UN Archives",
+      "imageUrl": ""
+    },
+    {
+      "id": "gal-6",
+      "slotLabel": "Photo Slot 06 / 10",
+      "category": "Under the stars",
+      "caption": "Under the stars — Deep-sky observation and celestial charting",
+      "year": "UN Archives",
+      "imageUrl": ""
+    },
+    {
+      "id": "gal-7",
+      "slotLabel": "Photo Slot 07 / 10",
+      "category": "Prize giving",
+      "caption": "Prize giving — Recognizing subject category winners and runners-up",
+      "year": "UN Archives",
+      "imageUrl": ""
+    },
+    {
+      "id": "gal-8",
+      "slotLabel": "Photo Slot 08 / 10",
+      "category": "Behind the scenes",
+      "caption": "Behind the scenes — Technical control desk and scoring verification",
+      "year": "UN Archives",
+      "imageUrl": ""
+    },
+    {
+      "id": "gal-9",
+      "slotLabel": "Photo Slot 09 / 10",
+      "category": "Teams in action",
+      "caption": "Teams in action — Delegates from schools across Sri Lanka networking",
+      "year": "UN Archives",
+      "imageUrl": ""
+    },
+    {
+      "id": "gal-10",
+      "slotLabel": "Photo Slot 10 / 10",
+      "category": "Under the stars",
+      "caption": "Under the stars — Dawn wrap-up after an unforgettable astronomical night",
+      "year": "UN Archives",
+      "imageUrl": ""
+    }
+  ],
+  "committee": {
+    "term": "2026/27",
+    "photoUrl": "/Committee.jpg",
+    "caption": "ASDRC Committee 2026/27",
+    "privacyModeStudentProtection": false,
+    "members": [
+      {
+        "id": "comm-mic",
+        "role": "Master-in-Charge (MIC)",
+        "name": "Mr. Sithira Sumanasiri",
+        "phone": "+94 77 320 8073",
+        "description": "Guides the society and oversees all activities and events.",
+        "portraitUrl": "/7.png",
+        "isStaff": true
+      },
+      {
+        "id": "comm-pres",
+        "role": "President",
+        "name": "Akitha Rathnayake",
+        "phone": "+94 72 747 6050",
+        "description": "Leads the society and represents it in all official matters.",
+        "portraitUrl": "/2.png",
+        "isStaff": false
+      },
+      {
+        "id": "comm-sec",
+        "role": "Secretary",
+        "name": "Kavindu Jayaweera",
+        "phone": "+94 76 770 6256",
+        "description": "Handles correspondence, registrations and official records.",
+        "portraitUrl": "/3.png",
+        "isStaff": false
+      },
+      {
+        "id": "comm-treas",
+        "role": "Treasurer",
+        "name": "Prageeth Abeykoon",
+        "phone": "+94 76 290 9589",
+        "description": "Manages society funds, event budgets and financial records.",
+        "portraitUrl": "/4.png",
+        "isStaff": false,
+        "optional": true
+      },
+      {
+        "id": "comm-vp",
+        "role": "Vice President",
+        "name": "Shenal Rajapaksha",
+        "phone": "+94 77 430 8971",
+        "description": "Supports the President and leads event coordination.",
+        "portraitUrl": "/5.png",
+        "isStaff": false
+      },
+      {
+        "id": "comm-vsec",
+        "role": "Vice Secretary",
+        "name": "Sadew Weerasinghe",
+        "phone": "+94 78 448 8284",
+        "description": "Assists with correspondence, documentation and registrations.",
+        "portraitUrl": "/6.png",
+        "isStaff": false
+      }
+    ]
+  }
+}

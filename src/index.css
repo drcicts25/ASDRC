@@ -1,0 +1,367 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --cosmos-black: #0D0D0D;
+  --cosmos-surface: #13161E;
+  --cosmos-surface-elevated: #171B26;
+  --cosmos-electric: #0511F2;
+  --cosmos-ice: #A7CFF2;
+  --cosmos-yellow: #F2E205;
+  --cosmos-amber: #F2A007;
+}
+
+html {
+  background-color: #0D0D0D;
+  color: #FFFFFF;
+  font-family: 'Inter', 'DM Sans', system-ui, -apple-system, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background-color: #0D0D0D;
+  color: #F8FAFC;
+  overflow-x: hidden;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: 'Space Grotesk', 'Syne', sans-serif;
+  letter-spacing: -0.025em;
+}
+
+/* Section Labels: small uppercase, letter-spaced, in ice blue (#A7CFF2) */
+.section-label {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #A7CFF2;
+}
+
+/* Restrained yellow-to-amber accent for occasional key words only */
+.text-supernova-gradient {
+  background: linear-gradient(135deg, #F2E205 0%, #F2A007 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Lifted dark surface (4-8% lighter than #0D0D0D with faint blue tint, architectural border) */
+.surface-card {
+  background-color: #13161F;
+  border: 1px solid rgba(167, 207, 242, 0.14);
+  transition: border-color 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.surface-card:hover {
+  border-color: rgba(167, 207, 242, 0.32);
+  box-shadow: 0 16px 40px -16px rgba(0, 0, 0, 0.85),
+              0 0 24px -10px rgba(5, 17, 242, 0.25);
+}
+
+/* Hairline architectural grid container */
+.observatory-grid {
+  background-color: rgba(167, 207, 242, 0.14);
+  gap: 1px;
+  border: 1px solid rgba(167, 207, 242, 0.14);
+}
+
+.observatory-cell {
+  background-color: #11141C;
+  transition: background-color 0.25s ease;
+}
+
+.observatory-cell:hover {
+  background-color: #151924;
+}
+
+/* Primary Button: solid #F2E205 with #0D0D0D text, hovering to #F2A007 */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  background-color: #F2E205;
+  color: #0D0D0D;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  border-radius: 9999px;
+  padding: 0.85rem 1.75rem;
+  min-height: 46px;
+  transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 0 24px -6px rgba(242, 226, 5, 0.35);
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: #F2A007;
+  color: #0D0D0D;
+  transform: translateY(-1px);
+  box-shadow: 0 0 28px -4px rgba(242, 160, 7, 0.55);
+}
+
+.btn-primary:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Secondary Button: outlined in #A7CFF2, filling on hover */
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  background-color: transparent;
+  color: #FFFFFF;
+  border: 1px solid rgba(167, 207, 242, 0.65);
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  border-radius: 9999px;
+  padding: 0.85rem 1.75rem;
+  min-height: 46px;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #A7CFF2;
+  border-color: #A7CFF2;
+  color: #0D0D0D;
+  box-shadow: 0 0 22px -6px rgba(167, 207, 242, 0.45);
+}
+
+/* Placeholder Badge styling for [square brackets] and image/logo slots */
+.placeholder-tag {
+  display: inline-block;
+  padding: 0.05rem 0.4rem;
+  border-radius: 0.25rem;
+  background: rgba(242, 160, 7, 0.12);
+  border: 1px dashed rgba(242, 226, 5, 0.48);
+  color: #F2E205;
+  font-family: 'Space Grotesk', monospace;
+  font-size: 0.9em;
+  font-weight: 600;
+  word-break: break-word;
+}
+
+.placeholder-slot {
+  position: relative;
+  background: linear-gradient(180deg, rgba(19, 22, 31, 0.95) 0%, rgba(13, 13, 13, 0.98) 100%);
+  border: 1px dashed rgba(167, 207, 242, 0.32);
+  transition: border-color 0.25s ease, background-color 0.25s ease;
+}
+
+.placeholder-slot:hover {
+  border-color: rgba(242, 226, 5, 0.55);
+}
+
+/* Hide scrollbars on horizontal filter strips on mobile */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Supernova Hero Core Animations */
+@keyframes pulseCore {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.88;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+}
+
+@keyframes orbitSlow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes shockwaveExpand {
+  0% {
+    transform: scale(0.75);
+    opacity: 0.45;
+  }
+  75% {
+    opacity: 0.12;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
+.animate-pulse-core {
+  animation: pulseCore 8s ease-in-out infinite;
+}
+
+.animate-orbit-slow {
+  animation: orbitSlow 64s linear infinite;
+}
+
+.animate-shockwave {
+  animation: shockwaveExpand 10s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+}
+
+/* Boot-Up Logo Loading Screen Animations (Non-destructive clip-path animation of /asdrc-logo.png) */
+@keyframes bootArcUpper {
+  0% {
+    opacity: 0;
+    transform: translate(-18px, 14px) scale(0.92);
+    filter: drop-shadow(0 0 0px rgba(167, 207, 242, 0));
+  }
+  60% {
+    opacity: 1;
+    transform: translate(2px, -2px) scale(1.01);
+    filter: drop-shadow(0 0 18px rgba(167, 207, 242, 0.65));
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+    filter: drop-shadow(0 0 8px rgba(167, 207, 242, 0.25));
+  }
+}
+
+@keyframes bootArcLower {
+  0% {
+    opacity: 0;
+    transform: translate(18px, -14px) scale(0.92);
+    filter: drop-shadow(0 0 0px rgba(167, 207, 242, 0));
+  }
+  60% {
+    opacity: 1;
+    transform: translate(-2px, 2px) scale(1.01);
+    filter: drop-shadow(0 0 18px rgba(167, 207, 242, 0.65));
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+    filter: drop-shadow(0 0 8px rgba(167, 207, 242, 0.25));
+  }
+}
+
+@keyframes bootWordmarkReveal {
+  0% {
+    opacity: 0;
+    transform: scale(0.96);
+    clip-path: polygon(0% 43.75%, 0% 43.75%, 0% 56.74%, 0% 56.74%);
+    filter: drop-shadow(0 0 0px rgba(255, 255, 255, 0));
+  }
+  70% {
+    opacity: 1;
+    clip-path: polygon(0% 43.75%, 100% 43.75%, 100% 56.74%, 0% 56.74%);
+    filter: drop-shadow(0 0 14px rgba(255, 255, 255, 0.45));
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    clip-path: polygon(0% 43.75%, 100% 43.75%, 100% 56.74%, 0% 56.74%);
+    filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.15));
+  }
+}
+
+@keyframes bootStarIgnite {
+  0% {
+    opacity: 0;
+    transform: scale(0) rotate(-35deg);
+    filter: drop-shadow(0 0 0px rgba(242, 226, 5, 0));
+  }
+  65% {
+    opacity: 1;
+    transform: scale(1.24) rotate(6deg);
+    filter: drop-shadow(0 0 18px rgba(242, 226, 5, 0.95));
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+    filter: drop-shadow(0 0 8px rgba(242, 160, 7, 0.45));
+  }
+}
+
+@keyframes bootFinalLockGlow {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.boot-arc-upper {
+  clip-path: polygon(41.5% 0%, 100% 0%, 100% 43.75%, 39.5% 43.75%, 40.9% 39.5%, 41.5% 37%);
+  transform-origin: 55% 36%;
+  animation: bootArcUpper 0.95s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both;
+}
+
+.boot-arc-lower {
+  clip-path: polygon(31.25% 56.74%, 100% 56.74%, 100% 100%, 31.25% 100%);
+  transform-origin: 50% 66%;
+  animation: bootArcLower 0.95s cubic-bezier(0.16, 1, 0.3, 1) 0.22s both;
+}
+
+.boot-wordmark {
+  clip-path: polygon(0% 43.75%, 100% 43.75%, 100% 56.74%, 0% 56.74%);
+  transform-origin: 50% 50%;
+  animation: bootWordmarkReveal 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.45s both;
+}
+
+.boot-star-1 {
+  clip-path: polygon(0% 0%, 31.25% 0%, 31.25% 43.75%, 0% 43.75%);
+  transform-origin: 25.59% 39.89%;
+  animation: bootStarIgnite 0.65s cubic-bezier(0.34, 1.56, 0.64, 1) 0.85s both;
+}
+
+.boot-star-2 {
+  clip-path: polygon(31.25% 0%, 41.5% 0%, 41.5% 37%, 40.9% 39.5%, 39.5% 43.75%, 31.25% 43.75%);
+  transform-origin: 37.21% 39.89%;
+  animation: bootStarIgnite 0.65s cubic-bezier(0.34, 1.56, 0.64, 1) 1.02s both;
+}
+
+.boot-star-3 {
+  clip-path: polygon(0% 56.74%, 31.25% 56.74%, 31.25% 100%, 0% 100%);
+  transform-origin: 25.93% 61.47%;
+  animation: bootStarIgnite 0.65s cubic-bezier(0.34, 1.56, 0.64, 1) 1.18s both;
+}
+
+.boot-complete-logo {
+  animation: bootFinalLockGlow 0.35s ease-out 1.65s both;
+}
+
+/* Respect reduced-motion settings */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Print styles for Rule Book */
+@media print {
+  body {
+    background: #FFFFFF !important;
+    color: #000000 !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only-clean {
+    background: #FFFFFF !important;
+    color: #000000 !important;
+    border: 1px solid #CCCCCC !important;
+    box-shadow: none !important;
+  }
+}
